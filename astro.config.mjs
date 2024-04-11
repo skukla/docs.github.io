@@ -31,6 +31,10 @@ export default defineConfig({
 						{
 							label: 'Your First Data Pack',
 							link: 'guides/data-packs/create-from-scratch/create-basic'
+						},
+						{
+							label: 'Exporting Data Packs',
+							link: 'guides/data-packs/exporting-packs/introduction'
 						}
 					]
 				},

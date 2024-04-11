@@ -8,10 +8,31 @@ head:
 hero:
   tagline: Real-world docs for Adobe Commerce SC's
   actions:
-    - text: Explore
+    - text: Start Here
       link: 'guides/start-here/install-software'
       icon: right-arrow
       variant: primary
 ---
 
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
 
+## Other Topics To Explore
+
+<CardGrid>
+	<Card title="Data Packs" icon="open-book">
+		<LinkCard title="Getting Started" href="guides/data-packs/getting-started/introduction" />
+		<LinkCard title="Create A Data Pack" href="guides/data-packs/create-from-scratch/create-basic" />
+	</Card>
+	<Card title="Commerce Demos" icon="open-book">
+		<LinkCard title="Demo System Commerce" href="#" />
+		<LinkCard title="Kukla VM Builder" href="#" />
+	</Card>
+	<Card title="EDS Storefront" icon="open-book">
+		<LinkCard title="Create an EDS Project" href="#" />
+		<LinkCard title="Configuring EDS and Commerce" href="#" />
+	</Card>
+	<Card title="App Builder Demos" icon="open-book">
+		<LinkCard title="API Mesh" href="#" />
+		<LinkCard title="Serverless Integrations" href="#" />
+	</Card>
+</CardGrid>

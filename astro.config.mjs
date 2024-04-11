@@ -35,6 +35,19 @@ export default defineConfig({
 					]
 				},
 				{
+					label: 'Demo System Commerce',
+					items: [
+						{
+							label: 'Getting Started',
+							link: '#'
+						},
+						{
+							label: 'Recommended Workflow',
+							link: '#'
+						},
+					]
+				},
+				{
 					label: 'Kukla VM Builder',
 					items: [
 						{
@@ -56,6 +69,61 @@ export default defineConfig({
 						{
 							label: 'Your First Project',
 							link: 'guides/vm-builder/first-project'
+						},
+					]
+				},
+				{
+					label: 'EDS Storefront',
+					items: [
+						{
+							label: 'Getting Started',
+							link: '#'
+						},
+						{
+							label: 'Commerce Configuration',
+							link: '#'
+						},
+						{
+							label: 'EDS Configuration',
+							link: '#'
+						},
+						{
+							label: 'Caveats',
+							link: '#'
+						},
+					]
+				},
+				{
+					label: 'API Mesh',
+					items: [
+						{
+							label: 'Getting Started',
+							link: '#'
+						},
+						{
+							label: 'Installation',
+							link: '#'
+						},
+						{
+							label: 'Creating Your Mesh',
+							link: '#'
+						},
+					]
+				},
+				{
+					label: 'App Builder Integration',
+					items: [
+						{
+							label: 'Getting Started',
+							link: '#'
+						},
+						{
+							label: 'Installation',
+							link: '#'
+						},
+						{
+							label: 'Creating Your App Builder App',
+							link: '#'
 						},
 					]
 				},

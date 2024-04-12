@@ -17,7 +17,7 @@ export default defineConfig({
 					items: [
 						{
 							label: 'Stuff You Need',
-							link: 'guides/start-here/install-software'
+							link: 'guides/start-here/'
 						},
 					]
 				},
@@ -26,15 +26,15 @@ export default defineConfig({
 					items: [
 						{
 							label: 'Getting Started',
-							link: 'guides/data-packs/getting-started/introduction'
+							link: 'guides/data-packs/getting-started'
 						},
 						{
 							label: 'Your First Data Pack',
-							link: 'guides/data-packs/create-from-scratch/create-basic'
+							link: 'guides/data-packs/create/your-first-pack'
 						},
 						{
 							label: 'Exporting Data Packs',
-							link: 'guides/data-packs/exporting-packs/introduction'
+							link: 'guides/data-packs/export'
 						}
 					]
 				},

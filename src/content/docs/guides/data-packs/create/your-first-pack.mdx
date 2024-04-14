@@ -3,14 +3,28 @@ title: Your First Data Pack
 description: Steps to create a basic data pack.
 ---
 
-import { FileTree, Steps, Code } from '@astrojs/starlight/components';
-import importedCode from '/src/data-packs/example/stores.json?raw';
+import { FileTree, Steps, Code, Aside } from '@astrojs/starlight/components';
+import storesJsonCode from '/src/data-packs/example/stores.json?raw';
+import storesCSVCode from '/src/data-packs/example/stores.csv?raw';
+import pagesJsonCode from '/src/data-packs/example/pages.json?raw';
+
+Let's create a data pack step by step.  I'll highlight each change as we go!
 
 ## Create A Skeleton
 
 <Steps>
 
 1. Create a new folder on your desktop and give it a name. Don't use captial letters and make sure to use dashes in place of spaces. For example: `my-data-pack`
+
+</Steps>
+
+<FileTree>
+
+    - **my-data-pack/**
+
+</FileTree>
+
+<Steps>
 
 2. Add a `data/` folder and a `media/` folder to `my-data-pack`.
 
@@ -49,5 +63,37 @@ import importedCode from '/src/data-packs/example/stores.json?raw';
 
 </Steps>
 
-<Code code={importedCode} lang="json" title="stores.json" />
+<Code code={storesJsonCode} lang="json" title="stores.json" />
+
+<Aside type='note'>
+The `stores.json` format is great for creating a single site, store, and store view. You can use a `csv` file when you want to create multiple sites, stores, and views. We cover that <a href="#">here</a>!
+</Aside>
+
+## Add a home page
+
+<Steps>
+
+3. Create a `pages.json` file in your pack's `data` directory.
+
+</Steps>
+
+<FileTree>
+
+    - my-data-pack/
+      - data/
+        - stores.json
+        - **pages.json**
+      - media/
+
+</FileTree>
+
+<br />
+
+<Steps>
+
+4. Add the following to the `pages.json` file and save.
+
+</Steps>
+
+<Code code={pagesJsonCode} lang="json" title="stores.json" />
 

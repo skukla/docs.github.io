@@ -4,16 +4,7 @@ description: An introduction to Java-Script Object Notation
 ---
 
 import { FileTree, Steps, Code, Aside } from '@astrojs/starlight/components';
-import stringExampleCode from '@snippets/stringExample.jsonc?raw';
-import stringsExampleCode from '@snippets/stringsExample.jsonc?raw';
-import numberExampleCode from '@snippets/numberExample.jsonc?raw';
-import listExampleCode from '@snippets/listExample.jsonc?raw';
-import booleanExampleCode from '@snippets/booleanExample.jsonc?raw';
-import nullExampleCode from '@snippets/nullExample.jsonc?raw';
-import emptyPeopleListCode from '@snippets/emptyPeopleList.jsonc?raw';
-import emptyObjectsListCode from '@snippets/emptyObjectsList.jsonc?raw';
-import firstPersonListCode from '@snippets/firstPersonList.jsonc?raw';
-import peopleListCode from '@snippets/peopleList.jsonc?raw';
+import Tutorial from '@components/Tutorial.astro';
 
 **JSON** (**J**ava**S**cript **O**bject **N**otation) is a method of describing data that's easy for both computers and people to understand. JSON files are text files that contain data and use the `.jsonc` extension.  Data in a `.jsonc` file is organized in a specific way which makes it easy for developers to read and write. JSON is also the data format that is most commonly used to pass data between different systems.  Here are five key concepts that will help you understand how to read and write JSON.
 
@@ -31,13 +22,22 @@ Data inside JavaScript objects is represented as a **key-value pair**. JSON data
 
 For example, let's say I wanted to represent my first name in JSON:
 
-<Code code={stringExampleCode} lang='jsonc' title='String Example' />
+```jsonc
+{
+  "first_name": "Steve"
+}
+```
 
 Here, we have a single object which contains a single key-value pair. The `"first_name"` key has a value of `"Steve"`. 
 
 Next, let's suppose I want to add my last name:
 
-<Code code={stringsExampleCode} lang='jsonc' mark=',' title='Multiple Strings Example' />
+```jsonc
+{
+  "first_name": "Steve",
+  "last_name": "Kukla"
+}
+```
 
 You'll notice that I've added my last name as a new key value pair and separated the two pairs with a comma which I've highlighted for emphasis.
 
@@ -49,42 +49,185 @@ Before we go further, it's important to mention that there are different types o
 
 Strings are sequences of letters, numbers, symbols, or spaces arranged in a specific order.  In JSON, all strings must be wrapped with double-quotes: `"`.  If we go back to the previous example:
 
-<Code code={stringsExampleCode} lang='jsonc' title='Multiple Strings Example' />
+```jsonc
+{
+  "first_name": "Steve"
+}
+```
 
-We can tell that the values `Steve` and `Kukla` are strings because they are surrounded by double-quotes.
+We can tell that the value `Steve` is a string because it follows a key and is surrounded by double-quotes.
+
+Like objects, strings can also be empty.  Here's my first name and a key for my last name with an empty string as its value:
+
+```jsonc
+{
+  "first_name": "Steve",
+  "last_name": ""
+}
+```
 
 ### Numbers
 
 Numbers are exactly what they sound like, and JSON supports both integers and decimals. Unlike strings, numbers in JSON don't have quotes around them.  Suppose I wanted to add my age to my name in our object.  I can do it like this:
 
-<Code code={numberExampleCode} lang='jsonc' title='Number Example' />
+```jsonc
+{
+  "first_name": "Steve",
+  "last_name": "Kukla",
+  "age": 40
+}
+```
+
+Here, I know `40` is a number rather than a string because it _doesn't_ have double quotes around it.
 
 ### Booleans
 
-<Code code={booleanExampleCode} lang='jsonc' title='Boolean Example' />
+Booleans are like on/off switches.  They can either be `true` or `false`.  Let's say I want to note whether I have pets as a boolean:
+
+```jsonc
+{
+  "first_name": "Steve",
+  "last_name": "Kukla",
+  "age": 40,
+  "has_pets": false
+}
+```
+
+Here you can see that I don't have pets because I've used a value of `false`.
 
 ### Null
 
-<Code code={nullExampleCode} lang='jsonc' title='Null Example' />
+Null values are used to designate that a key has no value.  Note that `null` is not the same as `""` which is an empty string. Even though they may mean the same thing logically, `null` is an actual value type. Let's say I had an API which required a key/value pair `"dog_name"` be included in its data.  Here's how I would represent that with a null value:
+
+```jsonc
+{
+  "first_name": "Steve",
+  "last_name": "Kukla",
+  "age": 40,
+  "has_pets": false,
+  "dog_name": null
+}
+```
+
+Here, because I have no pets, I need a value for `dog_name` that isn't empty but still communicates that the name doesn't exist which is a perfect use case for `null`.
 
 ### Lists
 
 A list is a comma-separated collection of values which can be of any type.  In this example, I've used a list of strings to show my favorite foods; however, I could've used a list of numbers, booleans, null values, or even a list of objects, too.
 
-<Code code={listExampleCode} lang='jsonc' title='List Example' />
+```jsonc
+{
+  "first_name": "Steve",
+  "last_name": "Kukla",
+  "age": 40,
+  "has_pets": false,
+  "dog_name": null,
+  "favorite_foods": ["Ramen", "Korean Barbeque", "Steak Frites", "In-N-Out"]
+}
+```
+
+List items can be written on a single line as shown above or they can also be separated with carraige returns like this:
+
+```jsonc
+{
+  "first_name": "Steve",
+  "last_name": "Kukla",
+  "age": 40,
+  "has_pets": false,
+  "dog_name": null,
+  "favorite_foods": [
+    "Ramen", 
+    "Korean Barbeque", 
+    "Steak Frites", 
+    "In-N-Out"
+  ]
+}
+```
+
+Like strings and objects, lists can also be empty.  Here's what an empty list of favorite foods looks like:
+
+```jsonc
+{
+  "first_name": "Steve",
+  "last_name": "Kukla",
+  "age": 40,
+  "has_pets": false,
+  "dog_name": null,
+  "favorite_foods": []
+}
+```
 
 ## A More Complex Example
 
-<Code code={emptyPeopleListCode} lang='jsonc' title='An empty list' />
+Now let's build up a more complex example: a list of objects representing two different people.
 
-<br />
+<Tutorial>
 
-<Code code={emptyObjectsListCode} lang='jsonc' title='A list with two empty objects' />
+We'll start with an empty list:
 
-<br />
+```jsonc
+{
+  "people": []
+}
+```
 
-<Code code={firstPersonListCode} lang='jsonc' title='A list with one full object, one empty' />
+Next, we'll add our first object:
 
-<br />
+```jsonc
+{
+  "people": [
+    {}
+  ]
+}
+```
 
-<Code code={peopleListCode} lang='jsonc' title='A List with two full objects' />
+Now, we fill it with our key-value pairs:
+
+```jsonc
+{
+  "people": [
+    {
+      "first_name": "Steve",
+      "last_name": "Kukla",
+      "age": 40,
+      "has_pets": false,
+      "dog_name": null,
+      "favorite_foods": ["Ramen", "Korean Barbeque", "Steak Frites", "In-N-Out"]
+    }
+  ]
+}
+```
+
+Lastly, let's add a second person object to our people list:
+
+```jsonc
+{
+  "people": [
+    {
+      "first_name": "Steve",
+      "last_name": "Kukla",
+      "age": 40,
+      "has_pets": false,
+      "dog_name": null,
+      "favorite_foods": ["Ramen", "Korean Barbeque", "Steak Frites", "In-N-Out"]
+    },
+    {
+      "first_name": "Tim",
+      "last_name": "Lee",
+      "age": 32,
+      "has_pets": true,
+      "dog_name": "George",
+      "favorite_foods": [
+        "Sushi",
+        "Grilled Chicken",
+        "Five Guys",
+        "Breakfast for dinner"
+      ]
+    }
+  ]
+}
+```
+
+</Tutorial>
+
+Now that you've got a solid understanding of what JSON is and how it works, let's move foward!

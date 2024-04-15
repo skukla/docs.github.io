@@ -40,12 +40,8 @@ export default defineConfig({
 									link: 'guides/data-packs/getting-started/json-primer'
 								},
 								{
-									label: 'Data Pack Software',
-									link: 'guides/data-packs/getting-started/software'
-								},
-								{
-									label: 'Data Pack VSCode Extensions',
-									link: 'guides/data-packs/getting-started/extensions'
+									label: 'Working with CSV Files',
+									link: 'guides/data-packs/getting-started/csv-files'
 								}
 							]
 						},
@@ -96,7 +92,11 @@ export default defineConfig({
 								{
 									label: 'Getting Started',
 									link: 'guides/data-packs/export'
-								}
+								},
+								{
+									label: 'Useful Software',
+									link: 'guides/data-packs/export/software'
+								},
 							]
 						}
 					]

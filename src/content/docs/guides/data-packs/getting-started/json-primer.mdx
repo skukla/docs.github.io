@@ -1,0 +1,90 @@
+---
+title: A JSON Primer
+description: An introduction to Java-Script Object Notation
+---
+
+import { FileTree, Steps, Code, Aside } from '@astrojs/starlight/components';
+import stringExampleCode from '@snippets/stringExample.jsonc?raw';
+import stringsExampleCode from '@snippets/stringsExample.jsonc?raw';
+import numberExampleCode from '@snippets/numberExample.jsonc?raw';
+import listExampleCode from '@snippets/listExample.jsonc?raw';
+import booleanExampleCode from '@snippets/booleanExample.jsonc?raw';
+import nullExampleCode from '@snippets/nullExample.jsonc?raw';
+import emptyPeopleListCode from '@snippets/emptyPeopleList.jsonc?raw';
+import emptyObjectsListCode from '@snippets/emptyObjectsList.jsonc?raw';
+import firstPersonListCode from '@snippets/firstPersonList.jsonc?raw';
+import peopleListCode from '@snippets/peopleList.jsonc?raw';
+
+**JSON** (**J**ava**S**cript **O**bject **N**otation) is a method of describing data that's easy for both computers and people to understand. JSON files are text files that contain data and use the `.jsonc` extension.  Data in a `.jsonc` file is organized in a specific way which makes it easy for developers to read and write. JSON is also the data format that is most commonly used to pass data between different systems.  Here are five key concepts that will help you understand how to read and write JSON.
+
+## Objects
+An **object** in any programming practice is just that -- a _thing_ that is represented by data.  In JSON, an object is represented by an open curly brace followed by a closed curly brace, like this:
+
+```json
+{}
+```
+
+In order to be valid, a JSON file must begin with a single object which itself contains other data.
+
+## Key-Value Pairs
+Data inside JavaScript objects is represented as a **key-value pair**. JSON data is divided into `keys` which are like labels and `values` which are what the label describes.
+
+For example, let's say I wanted to represent my first name in JSON:
+
+<Code code={stringExampleCode} lang='jsonc' title='String Example' />
+
+Here, we have a single object which contains a single key-value pair. The `"first_name"` key has a value of `"Steve"`. 
+
+Next, let's suppose I want to add my last name:
+
+<Code code={stringsExampleCode} lang='jsonc' mark=',' title='Multiple Strings Example' />
+
+You'll notice that I've added my last name as a new key value pair and separated the two pairs with a comma which I've highlighted for emphasis.
+
+## Data Types
+
+Before we go further, it's important to mention that there are different types of data that can be used in JSON. Here are the six data types with some examples.
+
+### Strings
+
+Strings are sequences of letters, numbers, symbols, or spaces arranged in a specific order.  In JSON, all strings must be wrapped with double-quotes: `"`.  If we go back to the previous example:
+
+<Code code={stringsExampleCode} lang='jsonc' title='Multiple Strings Example' />
+
+We can tell that the values `Steve` and `Kukla` are strings because they are surrounded by double-quotes.
+
+### Numbers
+
+Numbers are exactly what they sound like, and JSON supports both integers and decimals. Unlike strings, numbers in JSON don't have quotes around them.  Suppose I wanted to add my age to my name in our object.  I can do it like this:
+
+<Code code={numberExampleCode} lang='jsonc' title='Number Example' />
+
+### Booleans
+
+<Code code={booleanExampleCode} lang='jsonc' title='Boolean Example' />
+
+### Null
+
+<Code code={nullExampleCode} lang='jsonc' title='Null Example' />
+
+### Lists
+
+A list is a comma-separated collection of values which can be of any type.  In this example, I've used a list of strings to show my favorite foods; however, I could've used a list of numbers, booleans, null values, or even a list of objects, too.
+
+<Code code={listExampleCode} lang='jsonc' title='List Example' />
+
+## A More Complex Example
+
+<Code code={emptyPeopleListCode} lang='jsonc' title='An empty list' />
+
+<br />
+
+<Code code={emptyObjectsListCode} lang='jsonc' title='A list with two empty objects' />
+
+<br />
+
+<Code code={firstPersonListCode} lang='jsonc' title='A list with one full object, one empty' />
+
+<br />
+
+<Code code={peopleListCode} lang='jsonc' title='A List with two full objects' />

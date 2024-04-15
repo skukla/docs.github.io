@@ -1,12 +1,17 @@
 ---
-title: Stuff you need
+title: Software you need
 description: Software to install before using the VM.
 ---
 
 import { Steps, Code, Aside } from '@astrojs/starlight/components';
+import installHomebrewCode from '@snippets/homebrew.sh?raw';
 
-export const installHomebrewCode = `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`;
-export const codeTitle = 'Terminal command';
+export const terminalTitle = 'Terminal command';
+
+export const installVScode= `brew install visual-studio-code`
+export const installPostman = `brew install postman`
+export const installAltair = `brew install altair-graphql-client`
+
 
 So, you wanna get into the good stuff, eh? Your own local demo environment you control? Reusable demo data that makes repeatable and sharable demos possible?
 
@@ -16,6 +21,32 @@ Before we go deep, there're a few general purpose programs and tools you're gonn
 
 - **Text Editor** - <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>
 - **Mac OS Package Manager** - <a href="https://brew.sh/" target="_blank">Homebrew</a>
+
+## Homebrew
+
+Homebrew is an application manager for Mac. Whereas many popular developers publish their Mac applications to Apple's App Store, Homebrew makes it possible for developers to publish their applications to the world _without_ depending on the App Store (which charges them money to publish their apps). Users who want these applications can download and install them using Mac's Terminal application. In our case, we can actually install all of the other applications we need using Homebrew!
+
+### Installation
+
+<Steps>
+
+1. Hover over the following command and copy it using the icon on the right
+
+</Steps>
+
+<Code code={installHomebrewCode} lang="bash" title={terminalTitle} />
+
+<Steps>
+
+2. Open your Mac's Terminal application.  You can either open your Applications from a Finder window, or you can search for Terminal using your Mac's Spotlight feature.  Press `CMD+Space` to access Spotlight and type in what you want.
+
+3. In the Terminal window, paste in the command above.
+
+4. Press `Enter`.
+
+5. Wait for the installation to complete, then close the Terminal.
+
+</Steps>
 
 ## Visual Studio Code
 
@@ -28,46 +59,10 @@ As you dig deeper into concepts like data packs and the VM Builder, you'll actua
 VS Code also comes with other stuff too, like:
 
 - A **file browser** for easily opening and working with files in a folder
-- An **integrated terminal** for working with command-line interfaces (CLI's) which is _waaaay_ better than the native Mac `Terminal`. (Like, **way** better)
+- An **integrated terminal** for working with command-line interfaces (CLI's) which is _waaaay_ better than the native Mac Terminal. (Like, **way** better)
 
-## Homebrew
+### Installation
 
-Homebrew is an application manager for Mac. Whereas many popular developers publish their Mac applications to Apple's App Store, Homebrew makes it possible for developers to publish their applications to the world _without_ depending on the App Store (which charges them money to publish their apps). Users who want these applications can download and install them using Mac's `Terminal` application. In our case, we can actually install all of the other applications we need using Homebrew!
+Now that we have Homebrew installed, we can use it to install Visual Studio Code:
 
-### Install via Terminal
-<Steps>
-
-1. Hover over the following command and copy it using the icon on the right
-
-</Steps>
-
-<Code code={installHomebrewCode} lang="bash" title={codeTitle} />
-
-<Steps>
-
-2. Open your Mac's `Terminal` application.  You can either open your `Applications` from a `Finder` window, or you can search for `Terminal` using your Mac's Spotlight feature.  Press `CMD+Space` to access Spotlight and type in what you want.
-
-3. In the `Terminal` window, paste in the command above.
-
-4. Press `Enter`.
-
-5. Wait for the installation to complete, then close the `Terminal`.
-
-</Steps>
-
-<Aside type='tip'>
-Just so you know, you don't _have_ to be a nerd like Steve and use the terminal to install Homebrew. You can actually install it using a more traditional point-and-click approach.
-</Aside>
-
-### Install via Mouse
-<Steps>
-
-1. Navigate to <a href="https://github.com/Homebrew/brew/releases/latest" target="_blank">Homebrew's latest GitHub release</a>
-
-2. Scroll to the bottom of the page
-
-3. Under the **Assets** heading, find the .pkg link (e.g. **Homebrew-4.2.17.pkg**) and click to download
-
-4. Double click to open and follow the installer prompts to complete the installation
-
-</Steps>
+<Code code={installVScode} lang="bash" title={terminalTitle} />

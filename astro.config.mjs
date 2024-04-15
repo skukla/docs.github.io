@@ -18,68 +18,180 @@ export default defineConfig({
 					label: 'Start Here',
 					items: [
 						{
-							label: 'Stuff You Need',
+							label: 'Software You Need',
 							link: 'guides/start-here/'
-						},
-					]
-				},
-				{
-					label: 'Data Packs',
-					items: [
-						{
-							label: 'Getting Started',
-							link: 'guides/data-packs/getting-started'
-						},
-						{
-							label: 'Your First Data Pack',
-							link: 'guides/data-packs/create/your-first-pack'
-						},
-						{
-							label: 'Exporting Data Packs',
-							link: 'guides/data-packs/export'
 						}
 					]
 				},
 				{
-					label: 'Demo System Commerce',
+					label: 'Data Packs',
+					collapsed: true,
 					items: [
 						{
 							label: 'Getting Started',
-							link: '#'
+							collapsed: true,
+							items: [
+								{
+									label: 'What Are Data Packs?',
+									link: 'guides/data-packs/getting-started'
+								},
+								{
+									label: 'A JSON Primer',
+									link: 'guides/data-packs/getting-started/json-primer'
+								},
+								{
+									label: 'Data Pack Software',
+									link: 'guides/data-packs/getting-started/software'
+								},
+								{
+									label: 'Data Pack VSCode Extensions',
+									link: 'guides/data-packs/getting-started/extensions'
+								}
+							]
 						},
 						{
-							label: 'Recommended Workflow',
-							link: '#'
+							label: 'Creating Data Packs',
+							collapsed: true,
+							items: [
+								{
+									label: 'Your First Data Pack',
+									collapsed: true,
+									items: [
+										{
+											label: 'Creating the Skeleton',
+											link: '#'
+										},
+										{
+											label: 'Settings',
+											link: '#'
+										},
+										{
+											label: 'Sites, Stores, and Views',
+											link: '#'
+										},
+										{
+											label: 'Adding A Home Page',
+											link: '#'
+										},
+										{
+											label: 'Product Attributes',
+											link: '#'
+										},
+										{
+											label: 'Products',
+											link: '#'
+										},
+										{
+											label: 'Basic Configurations',
+											link: '#'
+										},
+									]
+								}
+							]
+						},
+						{
+							label: 'Exporting Data Packs',
+							collapsed: true,
+							items: [
+								{
+									label: 'Getting Started',
+									link: 'guides/data-packs/export'
+								}
+							]
+						}
+					]
+				},
+				{
+					label: 'Commerce Demos',
+					collapsed: true,
+					items: [
+						{
+							label: 'Demo System Commerce',
+							collapsed: true,
+							items: [
+								{
+									label: 'Getting Started',
+									link: '#'
+								},
+								{
+									label: 'Recommended Workflow',
+									link: '#'
+								},
+							]
+						},
+						{
+							label: 'Kukla VM Builder',
+							collapsed: true,
+							items: [
+								{
+									label: 'Introduction',
+									link: 'guides/vm-builder/introduction'
+								},
+								{
+									label: 'Installation and Updates',
+									link: 'guides/vm-builder/installation'
+								},
+								{
+									label: 'Getting Started',
+									link: 'guides/vm-builder/getting-started'
+								},
+								{
+									label: 'VM Configuration',
+									link: 'guides/vm-builder/config_json'
+								},
+								{
+									label: 'Your First Project',
+									link: 'guides/vm-builder/first-project'
+								},
+							]
 						},
 					]
 				},
 				{
-					label: 'Kukla VM Builder',
+					label: 'App Builder Demos',
+					collapsed: true,
 					items: [
 						{
-							label: 'Introduction',
-							link: 'guides/vm-builder/introduction'
+							label: 'API Mesh',
+							collapsed: true,
+							items: [
+								{
+									label: 'Getting Started',
+									link: '#'
+								},
+								{
+									label: 'Installation',
+									link: '#'
+								},
+								{
+									label: 'Creating Your Mesh',
+									link: '#'
+								},
+							]
 						},
 						{
-							label: 'Installation and Updates',
-							link: 'guides/vm-builder/installation'
-						},
-						{
-							label: 'Getting Started',
-							link: 'guides/vm-builder/getting-started'
-						},
-						{
-							label: 'VM Configuration',
-							link: 'guides/vm-builder/config_json'
-						},
-						{
-							label: 'Your First Project',
-							link: 'guides/vm-builder/first-project'
-						},
+							label: 'App Builder Integration',
+							collapsed: true,
+							items: [
+								{
+									label: 'Getting Started',
+									link: '#'
+								},
+								{
+									label: 'Installation',
+									link: '#'
+								},
+								{
+									label: 'Creating Your App Builder App',
+									link: '#'
+								},
+							]
+						}
 					]
 				},
 				{
 					label: 'EDS Storefront',
+					collapsed: true,
 					items: [
 						{
 							label: 'Getting Started',
@@ -100,41 +212,8 @@ export default defineConfig({
 					]
 				},
 				{
-					label: 'API Mesh',
-					items: [
-						{
-							label: 'Getting Started',
-							link: '#'
-						},
-						{
-							label: 'Installation',
-							link: '#'
-						},
-						{
-							label: 'Creating Your Mesh',
-							link: '#'
-						},
-					]
-				},
-				{
-					label: 'App Builder Integration',
-					items: [
-						{
-							label: 'Getting Started',
-							link: '#'
-						},
-						{
-							label: 'Installation',
-							link: '#'
-						},
-						{
-							label: 'Creating Your App Builder App',
-							link: '#'
-						},
-					]
-				},
-				{
 					label: 'Reference',
+					collapsed: true,
 					autogenerate: { directory: 'reference' },
 				},
 			],

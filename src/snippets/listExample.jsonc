@@ -1,0 +1,8 @@
+{
+  "first_name": "Steve",
+  "last_name": "Kukla",
+  "age": 40,
+  "has_pets": false,
+  "dog_name": null,
+  "favorite_foods": ["Ramen", "Korean Barbeque", "Steak Frites", "In-N-Out"]
+}

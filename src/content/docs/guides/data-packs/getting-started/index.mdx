@@ -5,39 +5,71 @@ description: What are data packs?
 
 import { FileTree } from '@astrojs/starlight/components';
 
-Overview of what data packs are goes here.
+## What Are Data Packs?
+
+**Data Packs** are collections of **data files** (`.json` and/or `.csv`) and **media files** which can be used to create sample data for Adobe Commerce.
+
+Data Packs depend on a custom module called the **Data Installer**.  This custom module, designed by Jeff Britts, extends the native import/export capabilities of Adobe Commerce beyond the natively-supported data types so that almost any piece of data in Adobe Commerce can be imported as a data file.
+
+Once the data and media files are collected and zipped, the data pack `.zip` file can then be imported into an Adobe Commerce installation in order to create demo use cases.
 
 ## Data Pack Structure
 
+A data pack can have as many or as few files in it as you need it to.  Here's a diagram showing the typical file structure a data pack uses, and the complete list of files it can contain:
+
 <FileTree>
 
-  - adobe.zip
-    - adobe
+  - bodea.zip
+    - bodea
       - data
-        - stores.json
-        - settings.json
+        - admin_roles.json
+        - admin_users.json
+        - advanced_pricing.csv
+        - b2b_companies.json
+        - b2b_shared_catalogs.json
+        - b2b_shared_catalog_categories.json
         - blocks.json
+        - cart_rules.json
         - categories.json
-        - products.csv
+        - config_default.json
+        - config_secret.json
+        - customer_addresses.csv 
+        - customer_attributes.json
+        - customer_groups.json 
+        - customer_segments.json
         - customers.csv
+        - dynamic_blocks.json
+        - pages.json
+        - product_attributes.json
+        - products_with_downloadable.csv
+        - products.csv
+        - settings.json
+        - store_configurations.json
+        - stores.json
+        - templates.json
+        - upsells.json
+        - widgets.json
       - media
         - catalog
           - product
             - image.jpg
             - ...
+        - email
+          - logo.png
+        - favicon
+          - favicon.png
+        - logo
+          - logo.png
+        - ThemeCustomizer
+          - CustomBodea.css
+        - wysiwyg
+          - bodea
+            - home
+              - banner.png
+              - ...
+            - ...
+          - ...
 
 </FileTree>
 
-## A JSON Primer
-
-Overview of what JSON is goes here.
-
-### Key-Value Pairs
-
-### Strings
-
-### Integers
-
-### Arrays / Lists
-
-### Objects 
+Since data packs are made up largely of `.json` and/or `.csv` files, let's dive into a brief primer on what JSON is and how it works.

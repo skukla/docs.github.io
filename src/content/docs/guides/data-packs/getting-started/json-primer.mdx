@@ -11,7 +11,7 @@ import Tutorial from '@components/Tutorial.astro';
 ## Objects
 An **object** in any programming practice is just that -- a _thing_ that is represented by data.  In JSON, an object is represented by an open curly brace followed by a closed curly brace, like this:
 
-```json
+```json title="An empty object"
 {}
 ```
 
@@ -22,7 +22,7 @@ Data inside JavaScript objects is represented as a **key-value pair**. JSON data
 
 For example, let's say I wanted to represent my first name in JSON:
 
-```jsonc
+```jsonc title="An object with a single key-value pair"
 {
   "first_name": "Steve"
 }
@@ -32,7 +32,7 @@ Here, we have a single object which contains a single key-value pair. The `"firs
 
 Next, let's suppose I want to add my last name:
 
-```jsonc
+```jsonc title="An object with two key-value pairs"
 {
   "first_name": "Steve",
   "last_name": "Kukla"
@@ -49,7 +49,7 @@ Before we go further, it's important to mention that there are different types o
 
 Strings are sequences of letters, numbers, symbols, or spaces arranged in a specific order.  In JSON, all strings must be wrapped with double-quotes: `"`.  If we go back to the previous example:
 
-```jsonc
+```jsonc title="String example"
 {
   "first_name": "Steve"
 }
@@ -59,7 +59,7 @@ We can tell that the value `Steve` is a string because it follows a key and is s
 
 Like objects, strings can also be empty.  Here's my first name and a key for my last name with an empty string as its value:
 
-```jsonc
+```jsonc title="Empty string example"
 {
   "first_name": "Steve",
   "last_name": ""
@@ -70,7 +70,7 @@ Like objects, strings can also be empty.  Here's my first name and a key for my 
 
 Numbers are exactly what they sound like, and JSON supports both integers and decimals. Unlike strings, numbers in JSON don't have quotes around them.  Suppose I wanted to add my age to my name in our object.  I can do it like this:
 
-```jsonc
+```jsonc title="Number example"
 {
   "first_name": "Steve",
   "last_name": "Kukla",
@@ -84,7 +84,7 @@ Here, I know `40` is a number rather than a string because it _doesn't_ have dou
 
 Booleans are like on/off switches.  They can either be `true` or `false`.  Let's say I want to note whether I have pets as a boolean:
 
-```jsonc
+```jsonc title="Boolean example"
 {
   "first_name": "Steve",
   "last_name": "Kukla",
@@ -99,7 +99,7 @@ Here you can see that I don't have pets because I've used a value of `false`.
 
 Null values are used to designate that a key has no value.  Note that `null` is not the same as `""` which is an empty string. Even though they may mean the same thing logically, `null` is an actual value type. Let's say I had an API which required a key/value pair `"dog_name"` be included in its data.  Here's how I would represent that with a null value:
 
-```jsonc
+```jsonc title="Null example"
 {
   "first_name": "Steve",
   "last_name": "Kukla",
@@ -115,7 +115,7 @@ Here, because I have no pets, I need a value for `dog_name` that isn't empty but
 
 A list is a comma-separated collection of values which can be of any type.  In this example, I've used a list of strings to show my favorite foods; however, I could've used a list of numbers, booleans, null values, or even a list of objects, too.
 
-```jsonc
+```jsonc title="Single-line list example"
 {
   "first_name": "Steve",
   "last_name": "Kukla",
@@ -129,7 +129,7 @@ A list is a comma-separated collection of values which can be of any type.  In t
 
 List items can be written on a single line as shown above or they can also be separated with carraige returns like this:
 
-```jsonc
+```jsonc title="Multi-line list example"
 {
   "first_name": "Steve",
   "last_name": "Kukla",
@@ -148,7 +148,7 @@ List items can be written on a single line as shown above or they can also be se
 
 Like strings and objects, lists can also be empty.  Here's what an empty list of favorite foods looks like:
 
-```jsonc
+```jsonc title="Empty list example"
 {
   "first_name": "Steve",
   "last_name": "Kukla",
@@ -170,7 +170,7 @@ Now let's build up a more complex example: a list of objects representing two di
 
 </Steps>
 
-```jsonc
+```jsonc title="Empty list"
 {
   "people": []
 }
@@ -182,7 +182,7 @@ Now let's build up a more complex example: a list of objects representing two di
 
 </Steps>
 
-```jsonc
+```jsonc title="List with an empty object"
 {
   "people": [
     {}
@@ -192,11 +192,11 @@ Now let's build up a more complex example: a list of objects representing two di
 
 <Steps>
 
-3. Now, we fill it with our key-value pairs:
+3. Now, we fill it with the key-value pairs for our first person:
 
 </Steps>
 
-```jsonc
+```jsonc title="List with a single person object"
 {
   "people": [
     {
@@ -217,7 +217,7 @@ Now let's build up a more complex example: a list of objects representing two di
 
 </Steps>
 
-```jsonc
+```jsonc title="List with two person objects"
 {
   "people": [
     {

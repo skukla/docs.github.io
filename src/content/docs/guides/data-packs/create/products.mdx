@@ -1,0 +1,41 @@
+---
+title: The Product Attributes File
+description: Steps to create product attribtues
+---
+
+import { FileTree, Steps, Code, Aside } from '@astrojs/starlight/components';
+import productsJsonCode from '@bodea/products.csv?raw';
+
+<Steps>
+
+1. Create a `products.csv` file in your pack's `data` directory.
+
+</Steps>
+
+<FileTree>
+
+    - bodea/
+      - data/
+        - settings.json
+        - stores.json
+        - pages.json
+        - product_attributes.json
+        - **products.csv**
+      - media/
+
+</FileTree>
+
+<Steps>
+
+2. Add the following to the `products.csv` file and save.
+
+</Steps>
+
+<Aside type='caution'>
+This is a long snippet! It may be better to use the links at the side to move further down the page.
+</Aside>
+
+<Code code={productsJsonCode} lang="csv" title="products.csv" />
+
+## Result
+

@@ -1,0 +1,54 @@
+---
+title: Adding A Home Page
+description: Steps to create CMS Pages
+---
+
+import { FileTree, Steps, Code, Aside } from '@astrojs/starlight/components';
+import pagesJsonCode from '@bodea/pages.json?raw';
+
+The `pages.json` file adds new CMS pages to an installation of Adobe Commerce. Let's add a home page for our new data pack.
+
+<Steps>
+
+1. Create a `pages.json` file in your pack's `data` directory.
+
+</Steps>
+
+<FileTree>
+
+    - bodea/
+      - data/
+        - settings.json
+        - stores.json
+        - **pages.json**
+      - media/
+
+</FileTree>
+
+<br />
+
+<Steps>
+
+2. Add the following to the `pages.json` file and save.
+
+</Steps>
+
+<Code code={pagesJsonCode} lang="json" title="pages.json" />
+
+Within its opening object, the `pages.json` file has a `data` object which then has a `cmsPages` object.  The `cmsPages` object then has an `items` list which contains a single object that represents a CMS page.
+
+## Result
+
+When this `pages.json` file is processed, it will do the following things:
+
+<Steps>
+
+1. Create a new CMS Page named **Bodea US Home**
+
+2. Assign the **Bodea US Home** CMS Page to the **US English** store view in the **Bodea US** website.
+
+</Steps>
+
+<Aside type='note'>
+By default, only a CMS page with an identifier of `home` is automatically configured to be the home page for the `base` website. Any other CMS Pages have to be configured as home pages for specific store views. This means that although we've added this CMS Page and specified that it should be applied to the **US English** store view, we'll have to explicitly configure it as the default home page for the store view later in the <a href="#">Basic Configurations</a> section.
+</Aside>

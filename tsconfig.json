@@ -5,7 +5,8 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@utils/*": ["src/utils/*"],
-      "@snippets/*": ["src/snippets/*"],
+      "@snippets/*": ["src/data/snippets/*"],
+      "@bodea/*": ["src/data/data-packs/bodea/*"],
       "@assets/*": ["src/assets/*"]
     }
   }

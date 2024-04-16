@@ -1,0 +1,41 @@
+---
+title: The Settings File
+description: Steps to create global data pack default settings.
+---
+
+import { FileTree, Steps, Code, Aside } from '@astrojs/starlight/components';
+import settingsJsonCode from '@bodea/settings.json?raw';
+
+Most data in Adobe Commerce relies on either a **website code**, **store code**, and/or a **store view code** in order to create the data in the correct data scope. The settings file primarily acts as a safety mechanism: it sets default values for a data pack's `site_code`, `store_code`, and `store_view_code` in case these values are left out of files that need them.
+
+
+## Create the `settings.json` file
+
+<Steps>
+
+1. Create a `settings.json` file in your pack's `data` directory.
+
+</Steps>
+
+<FileTree>
+
+    - bodea/
+      - data/
+        - **settings.json**
+      - media/
+
+</FileTree>
+
+<Steps>
+
+2. Add the following to the `settings.json` file
+
+</Steps>
+
+<Code code={settingsJsonCode} lang="json" title="settings.json" />
+
+<Steps>
+
+3. Save the file
+
+</Steps>

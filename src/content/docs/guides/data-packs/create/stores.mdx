@@ -1,0 +1,84 @@
+---
+title: The Stores File
+description: Steps to create websites, stores, and store views.
+---
+
+import { FileTree, Steps, Code, Aside } from '@astrojs/starlight/components';
+import Diagram from '@components/Diagram.astro';
+import storesJsonCode from '@bodea/stores.json?raw';
+
+The `stores.json` file adds new websites, stores, and/or store views to an installation of Adobe Commerce. Let's add a new website, store, and store view to our data pack.
+
+<Steps>
+
+1. Create a `stores.json` file in your pack's `data` directory.
+
+</Steps>
+
+<FileTree>
+
+    - bodea/
+      - data/
+        - settings.json
+        - **stores.json**
+      - media/
+
+</FileTree>
+
+<Steps>
+
+2. Add the following to the `stores.json` file and save.
+
+</Steps>
+
+<Code code={storesJsonCode} lang="json" title="stores.json" />
+
+Within its opening object, this `stores.json` file has a `data` object which contains a `storeConfig` object which contains a collection of settings for websites, stores, and store views as key-value pairs.
+
+<Aside type='note'>
+The `stores.json` format is great for creating a single site, store, and store view. You can use a `csv` file when you want to create multiple sites, stores, and views.
+</Aside>
+
+## Result
+
+When this `stores.json` file is processed, it will do the following things:
+
+### Create A New Website
+
+<Steps>
+
+1. Create a new website named **Bodea US** with a website code `bodea_us`
+
+</Steps>
+
+### Create A New Store
+
+<Steps>
+
+2. Create a new root category with an `id` `2` named **Bodea Catalog**
+
+3. Create a new store in the new **Bodea US** website with a store code `bodea_us_store` which uses the new **Bodea Catalog** root category
+
+4. Make the new **Bodea US Store** the default store in the **Bodea US Website**
+
+</Steps>
+
+### Create A New Store View
+
+<Steps>
+
+5. Create a new store view in the **Bodea US Store** with a store view code `bodea_us_en` named **US English**
+
+6. Set the new **US English** store view as the default view in the **Bodea US Store** store
+
+7. Set the store view sort order to `1`
+
+8. Set the store view's theme to `Magento/luma`
+
+9. Use the `Magento/luma` theme as a fallback in case there is no value supplied for `theme`.  (Won't apply in this case)
+
+</Steps>
+
+{/* <Diagram caption="New website, store, and store view created">
+![Stores Result](@assets/stores.png)
+</Diagram> */}

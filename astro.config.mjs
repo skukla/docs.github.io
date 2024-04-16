@@ -29,7 +29,7 @@ export default defineConfig({
 					items: [
 						{
 							label: 'Getting Started',
-							collapsed: true,
+							collapsed: false,
 							items: [
 								{
 									label: 'What Are Data Packs?',
@@ -40,54 +40,48 @@ export default defineConfig({
 									link: 'guides/data-packs/getting-started/json-primer'
 								},
 								{
-									label: 'Working with CSV Files',
-									link: 'guides/data-packs/getting-started/csv-files'
+									label: 'Working With CSV Files',
+									link: 'guides/data-packs/getting-started/csv-primer'
 								}
 							]
 						},
 						{
 							label: 'Creating Data Packs',
-							collapsed: true,
+							collapsed: false,
 							items: [
 								{
-									label: 'Your First Data Pack',
-									collapsed: true,
-									items: [
-										{
-											label: 'Creating the Skeleton',
-											link: '#'
-										},
-										{
-											label: 'Settings',
-											link: '#'
-										},
-										{
-											label: 'Sites, Stores, and Views',
-											link: '#'
-										},
-										{
-											label: 'Adding A Home Page',
-											link: '#'
-										},
-										{
-											label: 'Product Attributes',
-											link: '#'
-										},
-										{
-											label: 'Products',
-											link: '#'
-										},
-										{
-											label: 'Basic Configurations',
-											link: '#'
-										},
-									]
-								}
+									label: 'Data Pack Skeleton',
+									link: 'guides/data-packs/create/skeleton'
+								},
+								{
+									label: 'Settings',
+									link: 'guides/data-packs/create/settings'
+								},
+								{
+									label: 'Sites, Stores, and Views',
+									link: 'guides/data-packs/create/stores'
+								},
+								{
+									label: 'Adding A Home Page',
+									link: 'guides/data-packs/create/home-page'
+								},
+								{
+									label: 'Product Attributes',
+									link: 'guides/data-packs/create/product-attributes'
+								},
+								{
+									label: 'Products',
+									link: 'guides/data-packs/create/products'
+								},
+								{
+									label: 'Basic Configurations',
+									link: 'guides/data-packs/create/basic-configurations'
+								},
 							]
 						},
 						{
 							label: 'Exporting Data Packs',
-							collapsed: true,
+							collapsed: false,
 							items: [
 								{
 									label: 'Getting Started',

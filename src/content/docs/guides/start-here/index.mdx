@@ -4,11 +4,9 @@ description: Software to install before using the VM.
 ---
 
 import { Steps, Code, Aside } from '@astrojs/starlight/components';
-import installHomebrewCode from '@snippets/homebrew.sh?raw';
+import installHomebrewCode from '@snippets/homebrew.sh?raw'
 
-export const terminalTitle = 'Terminal command';
-
-export const installVScode= `brew install visual-studio-code`
+export const installVScode = `brew install visual-studio-code`
 export const installPostman = `brew install postman`
 export const installAltair = `brew install altair-graphql-client`
 
@@ -34,7 +32,7 @@ Homebrew is an application manager for Mac. Whereas many popular developers publ
 
 </Steps>
 
-<Code code={installHomebrewCode} lang="bash" title={terminalTitle} />
+<Code code={installHomebrewCode} lang="bash" title='Install Homebrew' />
 
 <Steps>
 
@@ -63,6 +61,14 @@ VS Code also comes with other stuff too, like:
 
 ### Installation
 
-Now that we have Homebrew installed, we can use it to install Visual Studio Code:
+Now that we have Homebrew installed, we can use it to install Visual Studio Code. 
 
-<Code code={installVScode} lang="bash" title={terminalTitle} />
+<Steps>
+1. Copy-paste this command in your Mac terminal:
+</Steps>
+
+<Code code={installVScode} lang="bash" title='Install Visual Studio Code' />
+
+<Steps>
+2. Press `Enter`
+</Steps>

@@ -1,0 +1,37 @@
+---
+title: The Store Configurations File
+description: Steps to add configuration settings
+---
+
+import { FileTree, Steps, Code, Aside } from '@astrojs/starlight/components';
+import storeConfigurationsJsonCode from '@bodea/store_configurations.json?raw';
+
+<Steps>
+
+1. Create a `store_configurations.json` file in your pack's `data` directory.
+
+</Steps>
+
+<FileTree>
+
+    - bodea/
+      - data/
+        - settings.json
+        - stores.json
+        - pages.json
+        - product_attributes.json
+        - **store_configurations.json**
+      - media/
+
+</FileTree>
+
+<Steps>
+
+2. Add the following to the `store_configurations.json` file and save.
+
+</Steps>
+
+<Code code={storeConfigurationsJsonCode} lang="json" title="store_configurations.json" />
+
+## Result
+

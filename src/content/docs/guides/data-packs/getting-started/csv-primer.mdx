@@ -1,0 +1,48 @@
+---
+title: Working With CSV Files
+description: Tips and tricks for working with CSV files
+next: 'Create a Data Pack Skeleton' 
+---
+
+import { FileTree, Steps, Code, Aside } from '@astrojs/starlight/components';
+
+A **CSV** (**C**omma**S**eparated **V**alues) file is a data file format meant to provide a table-like structure to text. In CSV files, rows of data are separated by commas to break the rows into columns. 
+
+
+## Basic Example
+
+Here's a representation of a list of people records in CSV format:
+
+```csv title="people.csv"
+first_name,last_name,age
+Steve,Kukla,40
+Tim,Lee,32
+```
+
+In this file, we have two rows, a header row and a single data row. Although the code formatter provides us with some nice syntax color highlighting to show how the headers relate to their data, it's often easier to view CSV data in the form of a table like this:
+
+| first_name   | last_name   | age  |
+| ------------ | ----------- | ---- | 
+| Steve        | Kukla       | 40   |
+| Tim          | Lee         | 32   |
+
+## Empty Records
+
+In the above example, our CSV columns all have corresponding row values.  They don't have to, though.  A CSV column can be empty in case you want to omit data for a particular column.  For example:
+
+```csv title="people.csv"
+first_name,last_name,age
+Steve,Kukla,40
+Tim,Lee,32
+Jon,Gosset,,
+```
+
+Here's the same data represented as a table:
+
+| first_name   | last_name   | age  |
+| ------------ | ----------- | ---- | 
+| Steve        | Kukla       | 40   |
+| Tim          | Lee         | 32   |
+| Jon          | Gosset      |      |
+
+Now that we've covered some CSV fundamentals, let's move on to our next section.

@@ -1,0 +1,32 @@
+{
+  "data": {
+    "storeConfigurations": {
+      "items": [
+        {
+          "path": "general/locale/code",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "en_US"
+        },
+        {
+          "path": "currency/options/default",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "USD"
+        },
+        {
+          "path": "currency/options/allow",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "USD"
+        },
+        {
+          "path": "web/default/cms_home_page",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "home"
+        }
+      ]
+    }
+  }
+}

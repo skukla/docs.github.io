@@ -4,7 +4,7 @@
       "items": [
         {
           "attribute_code": "bod_analog_input_resolution",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -48,7 +48,7 @@
         },
         {
           "attribute_code": "bod_analog_input_voltage_range",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -102,7 +102,7 @@
         },
         {
           "attribute_code": "bod_analog_output_bandwidth",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -146,7 +146,7 @@
         },
         {
           "attribute_code": "bod_aux_io",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -190,7 +190,7 @@
         },
         {
           "attribute_code": "bod_bd_digital_channels",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -244,7 +244,7 @@
         },
         {
           "attribute_code": "bod_block_ram",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -293,7 +293,7 @@
         },
         {
           "attribute_code": "bod_cable_length",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "select",
           "attribute_options": [
             {
@@ -337,7 +337,7 @@
         },
         {
           "attribute_code": "bod_cable_ohm",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "select",
           "attribute_options": [
             {
@@ -381,7 +381,7 @@
         },
         {
           "attribute_code": "bod_cable_type",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "select",
           "attribute_options": [
             {
@@ -425,7 +425,7 @@
         },
         {
           "attribute_code": "bod_compatible_fpga",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -469,7 +469,7 @@
         },
         {
           "attribute_code": "bod_digital_io_termination",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -513,7 +513,7 @@
         },
         {
           "attribute_code": "bod_dram",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -557,7 +557,7 @@
         },
         {
           "attribute_code": "bod_dsp_slices",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -606,7 +606,7 @@
         },
         {
           "attribute_code": "bod_duplex",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -650,7 +650,7 @@
         },
         {
           "attribute_code": "bod_fpga",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -699,7 +699,7 @@
         },
         {
           "attribute_code": "bod_fpga_module_ram",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "select",
           "attribute_options": [
             {
@@ -748,7 +748,7 @@
         },
         {
           "attribute_code": "bod_fpga_slices",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -797,7 +797,7 @@
         },
         {
           "attribute_code": "bod_hw_service_program_duration",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "select",
           "attribute_options": [
             {
@@ -841,7 +841,7 @@
         },
         {
           "attribute_code": "bod_hw_service_program_option",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "select",
           "attribute_options": [
             {
@@ -885,7 +885,7 @@
         },
         {
           "attribute_code": "bod_logic_levels_range",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -959,7 +959,7 @@
         },
         {
           "attribute_code": "bod_max_clock_rate",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -1013,7 +1013,7 @@
         },
         {
           "attribute_code": "bod_max_data_rate",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -1067,7 +1067,7 @@
         },
         {
           "attribute_code": "bod_max_sample_rate",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -1116,7 +1116,7 @@
         },
         {
           "attribute_code": "bod_model",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "text",
           "attribute_options": [],
           "storefront_properties": {
@@ -1149,7 +1149,7 @@
         },
         {
           "attribute_code": "bod_part_number",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "text",
           "attribute_options": [],
           "storefront_properties": {
@@ -1182,7 +1182,7 @@
         },
         {
           "attribute_code": "bod_primary_industry",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "select",
           "attribute_options": [
             {
@@ -1261,7 +1261,7 @@
         },
         {
           "attribute_code": "bod_pxi_backplane_link",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -1300,7 +1300,7 @@
         },
         {
           "attribute_code": "bod_reconstruction_filter",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -1344,7 +1344,7 @@
         },
         {
           "attribute_code": "bod_signaling_type",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {
@@ -1388,7 +1388,7 @@
         },
         {
           "attribute_code": "bod_voltage_input_channels",
-          "store_view_code": "default",
+          "store_view_code": "bodea_us_en",
           "frontend_input": "multiselect",
           "attribute_options": [
             {

@@ -1,0 +1,22 @@
+{
+  "data": {
+    "widgets": {
+      "items": [
+        {
+          "block_reference": "top.container",
+          "entities": "",
+          "instance_type": "Magento\\Banner\\Block\\Widget\\Banner",
+          "layout_handle": "checkout_cart_index",
+          "page_for": "all",
+          "page_group": "pages",
+          "page_template": "widget/block.phtml",
+          "sort_order": 0,
+          "store_view_code": "bodea_us_en",
+          "theme": "Magento/luma",
+          "title": "Free Shipping Advertisement",
+          "widget_parameters": "{\"display_mode\":\"fixed\",\"types\":[\"\"],\"rotate\":\"\",\"banner_ids\":\"{{dynamicblock name=\"Free Shipping Advertisement\"}}\",\"unique_id\":\"8a3058c8ff55b14af2ee0bb68fa2602f4b205623aa078103f2f2f696cd836ad8\",\"banner_uids\":\"\"}"
+        }
+      ]
+    }
+  }
+}

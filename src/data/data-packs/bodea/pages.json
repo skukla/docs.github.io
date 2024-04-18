@@ -5,7 +5,7 @@
         {
           "store_view_code": "bodea_us_en",
           "identifier": "bodea-us-home",
-          "is_active": 1,
+          "is_active": "Y",
           "title": "Bodea US Home",
           "page_layout": "cms-full-width",
           "content_heading": "",

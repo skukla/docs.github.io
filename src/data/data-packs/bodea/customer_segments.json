@@ -1,0 +1,43 @@
+{
+  "data": {
+    "customerSegments": {
+      "items": [
+        {
+          "name": "Guest Users",
+          "apply_to": "2",
+          "conditions_serialized": "{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Combine\\\\Root\",\"attribute\":null,\"operator\":null,\"value\":true,\"is_value_processed\":null,\"aggregator\":\"all\"}",
+          "description": null,
+          "site_code": "bodea_us"
+        },
+        {
+          "name": "Registered Users",
+          "apply_to": "1",
+          "conditions_serialized": "{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Combine\\\\Root\",\"attribute\":null,\"operator\":null,\"value\":true,\"is_value_processed\":null,\"aggregator\":\"all\"}",
+          "description": null,
+          "site_code": "bodea_us"
+        },
+        {
+          "name": "Registered Users who placed fewer than 5 orders",
+          "apply_to": "1",
+          "conditions_serialized": "{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Combine\\\\Root\",\"attribute\":null,\"operator\":null,\"value\":\"1\",\"is_value_processed\":null,\"aggregator\":\"all\",\"conditions\":[{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Sales\\\\Ordersnumber\",\"attribute\":\"total\",\"operator\":\"<\",\"value\":\"5\",\"is_value_processed\":null,\"aggregator\":\"any\",\"conditions\":[{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Order\\\\Status\",\"attribute\":false,\"operator\":\"==\",\"value\":\"complete\",\"is_value_processed\":false},{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Order\\\\Status\",\"attribute\":false,\"operator\":\"==\",\"value\":\"pending\",\"is_value_processed\":false},{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Order\\\\Status\",\"attribute\":false,\"operator\":\"==\",\"value\":\"processing\",\"is_value_processed\":false}]}]}",
+          "description": null,
+          "site_code": "bodea_us"
+        },
+        {
+          "name": "Registered Users Interested in Transportation",
+          "apply_to": "1",
+          "conditions_serialized": "{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Combine\\\\Root\",\"attribute\":null,\"operator\":null,\"value\":\"1\",\"is_value_processed\":null,\"aggregator\":\"all\",\"conditions\":[{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Customer\\\\Attributes\",\"attribute\":\"industry\",\"operator\":\"[]\",\"value\":[\"{{customerattribute code=\"industry:Transportation\"}}\"],\"is_value_processed\":false}]}",
+          "description": null,
+          "site_code": "bodea_us"
+        },
+        {
+          "name": "Free Shipping Target",
+          "apply_to": "1",
+          "conditions_serialized": "{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Combine\\\\Root\",\"attribute\":null,\"operator\":null,\"value\":\"1\",\"is_value_processed\":null,\"aggregator\":\"all\",\"conditions\":[{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Shoppingcart\\\\Amount\",\"attribute\":\"subtotal\",\"operator\":\">=\",\"value\":\"5000\",\"is_value_processed\":false},{\"type\":\"Magento\\\\CustomerSegment\\\\Model\\\\Segment\\\\Condition\\\\Shoppingcart\\\\Amount\",\"attribute\":\"subtotal\",\"operator\":\"<\",\"value\":\"10000\",\"is_value_processed\":false}]}",
+          "description": "Carts between $5000 and $1000",
+          "site_code": "bodea_us"
+        }
+      ]
+    }
+  }
+}

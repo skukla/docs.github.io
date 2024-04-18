@@ -1,0 +1,2 @@
+email,_website,_store,website_id,store_id,created_in,prefix,firstname,middlename,lastname,suffix,dob,password_hash,rp_token,rp_token_created_at,taxvat,confirmation,gender,disable_auto_group_change,failures_num,first_failure,lock_expires,reward_update_notification,reward_warning_notification,industry,password
+steve@n-motion.com,bodea_us,bodea_us_en,1,1,US English,,Steve,,Kukla,,,c91ea086f3735d2b0a690c19c08f4186c7309f9afda4a325983726d19909e671:T7TIEfhVN6qXwxIXzs26jQGcoGyYROWK:3_32_2_67108864,,,,,Male,0,0,,,0,0,Transportation,Password1

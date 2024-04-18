@@ -1,0 +1,40 @@
+{
+  "data": {
+    "adminUsers": {
+      "items": [
+        {
+          "email": "hannah@bodea.com",
+          "firstname": "Hannah",
+          "lastname": "Baker",
+          "password": "Password1",
+          "role": "Sales Representative",
+          "username": "hannah"
+        },
+        {
+          "email": "christine@bodea.com",
+          "firstname": "Christine",
+          "lastname": "Miller",
+          "password": "Password1",
+          "role": "Catalog Manager",
+          "username": "christine"
+        },
+        {
+          "email": "bill@bodea.com",
+          "firstname": "Bill",
+          "lastname": "Thomas",
+          "password": "Password1",
+          "role": "Marketing Manager",
+          "username": "bill"
+        },
+        {
+          "email": "shelley@bodea.com",
+          "firstname": "Shelley",
+          "lastname": "Smith",
+          "password": "Password1",
+          "role": "Content Manager",
+          "username": "shelley"
+        }
+      ]
+    }
+  }
+}

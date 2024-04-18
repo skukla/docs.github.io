@@ -3,6 +3,114 @@
     "storeConfigurations": {
       "items": [
         {
+          "path": "design/header/welcome",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": ""
+        },
+        {
+          "path": "design/header/logo_src",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": "websites/1/logo.png"
+        },
+        {
+          "path": "design/header/logo_width",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": "130"
+        },
+        {
+          "path": "design/header/logo_height",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": "64"
+        },
+        {
+          "path": "design/head/shortcut_icon",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": "websites/1/favicon.png"
+        },
+        {
+          "path": "design/email/logo",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": "websites/1/logo.png"
+        },
+        {
+          "path": "general/store_information/country_id",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": "US"
+        },
+        {
+          "path": "general/store_information/region_id",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": "12"
+        },
+        {
+          "path": "general/store_information/postcode",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": "90016"
+        },
+        {
+          "path": "general/store_information/city",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": "Los Angeles"
+        },
+        {
+          "path": "general/store_information/street_line1",
+          "scope": "websites",
+          "scope_code": "bodea_us",
+          "value": "3640 Holdrege Ave"
+        },
+        {
+          "path": "general/store_information/name",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "Bodea"
+        },
+        {
+          "path": "general/store_information/phone",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "310-945-0345"
+        },
+        {
+          "path": "general/store_information/hours",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "9AM - 5PM"
+        },
+        {
+          "path": "design/head/includes",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "<link rel=\"stylesheet\" type=\"text/css\"  media=\"all\" href=\"{{MEDIA_URL}}ThemeCustomizer/KuklaBodea.css\" />"
+        },
+        {
+          "path": "shipping/origin/city",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "Los Angeles"
+        },
+        {
+          "path": "shipping/origin/street_line1",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "3640 Holdrege Ave"
+        },
+        {
+          "path": "shipping/origin/postcode",
+          "scope": "stores",
+          "scope_code": "bodea_us_en",
+          "value": "90016"
+        },
+        {
           "path": "general/locale/code",
           "scope": "stores",
           "scope_code": "bodea_us_en",
@@ -24,7 +132,7 @@
           "path": "web/default/cms_home_page",
           "scope": "stores",
           "scope_code": "bodea_us_en",
-          "value": "home"
+          "value": "bodea-us-home"
         }
       ]
     }

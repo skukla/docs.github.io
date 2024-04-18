@@ -1,0 +1,26 @@
+{
+  "data": {
+    "upsells": {
+      "items": [
+        {
+          "actions_serialized": "{\"type\":\"Magento\\\\TargetRule\\\\Model\\\\Actions\\\\Condition\\\\Combine\",\"attribute\":null,\"operator\":null,\"value\":\"1\",\"is_value_processed\":null,\"aggregator\":\"all\",\"conditions\":[{\"type\":\"Magento\\\\TargetRule\\\\Model\\\\Actions\\\\Condition\\\\Product\\\\Attributes\",\"attribute\":\"category_ids\",\"operator\":\"==\",\"value\":\"\",\"is_value_processed\":false,\"value_type\":\"same_as\"}]}",
+          "apply_to": "related",
+          "conditions_serialized": "{\"type\":\"Magento\\\\TargetRule\\\\Model\\\\Rule\\\\Condition\\\\Combine\",\"attribute\":null,\"operator\":null,\"value\":\"1\",\"is_value_processed\":null,\"aggregator\":\"all\",\"conditions\":[{\"type\":\"Magento\\\\TargetRule\\\\Model\\\\Rule\\\\Condition\\\\Product\\\\Attributes\",\"attribute\":\"category_ids\",\"operator\":\"==\",\"value\":\"{{categoryid key=\"flexrio-custom-instruments-processing\"}}\",\"is_value_processed\":false},{\"type\":\"Magento\\\\TargetRule\\\\Model\\\\Rule\\\\Condition\\\\Product\\\\Attributes\",\"attribute\":\"sku\",\"operator\":\"!{}\",\"value\":\"Bundle\",\"is_value_processed\":false}]}",
+          "customer_segments": "all",
+          "name": "Related Products",
+          "sort_order": 0,
+          "positions_limit": 20
+        },
+        {
+          "actions_serialized": "{\"type\":\"Magento\\\\TargetRule\\\\Model\\\\Actions\\\\Condition\\\\Combine\",\"attribute\":null,\"operator\":null,\"value\":\"1\",\"is_value_processed\":null,\"aggregator\":\"all\",\"conditions\":[{\"type\":\"Magento\\\\TargetRule\\\\Model\\\\Actions\\\\Condition\\\\Product\\\\Attributes\",\"attribute\":\"category_ids\",\"operator\":\"==\",\"value\":\"\",\"is_value_processed\":false,\"value_type\":\"same_as\"}]}",
+          "apply_to": "crosssell",
+          "conditions_serialized": "{\"type\":\"Magento\\\\TargetRule\\\\Model\\\\Rule\\\\Condition\\\\Combine\",\"attribute\":null,\"operator\":null,\"value\":\"1\",\"is_value_processed\":null,\"aggregator\":\"all\",\"conditions\":[{\"type\":\"Magento\\\\TargetRule\\\\Model\\\\Rule\\\\Condition\\\\Product\\\\Attributes\",\"attribute\":\"category_ids\",\"operator\":\"==\",\"value\":\"{{categoryid key=\"flexrio-custom-instruments-processing\"}}\",\"is_value_processed\":false},{\"type\":\"Magento\\\\TargetRule\\\\Model\\\\Rule\\\\Condition\\\\Product\\\\Attributes\",\"attribute\":\"sku\",\"operator\":\"!{}\",\"value\":\"Bundle\",\"is_value_processed\":false}]}",
+          "customer_segments": "Free Shipping Target",
+          "name": "Free Shipping Cross-sells",
+          "sort_order": 0,
+          "positions_limit": 20
+        }
+      ]
+    }
+  }
+}

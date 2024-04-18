@@ -1,0 +1,50 @@
+{
+  "data": {
+    "customAttributeMetadata": {
+      "items": [
+        {
+          "attribute_code": "industry",
+          "store_view_code": "bodea_us_en",
+          "frontend_input": "multiselect",
+          "attribute_options": [
+            {
+              "label": "Academic and Research"
+            },
+            {
+              "label": "Aerospace, Defense, and Government"
+            },
+            {
+              "label": "Electronics"
+            },
+            {
+              "label": "Energy"
+            },
+            {
+              "label": "Industrial Machinery"
+            },
+            {
+              "label": "Life Sciences"
+            },
+            {
+              "label": "Semiconductor"
+            },
+            {
+              "label": "Transportation"
+            }
+          ],
+          "admin_properties": {
+            "is_visible": 1,
+            "frontend_label": "Industry",
+            "is_filterable_in_grid": 0,
+            "is_used_in_grid": 0,
+            "is_visible_in_grid": 0,
+            "is_required": 0,
+            "is_used_for_customer_segment": 1,
+            "sort_order": 100,
+            "used_in_forms": "adminhtml_checkout,adminhtml_customer,customer_account_create,customer_account_edit"
+          }
+        }
+      ]
+    }
+  }
+}
